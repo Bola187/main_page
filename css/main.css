@@ -1,0 +1,157 @@
+*{
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+:root{
+    --botton-color: orangered;
+    --use-color: white;
+}
+.body{
+    font-family: 'Fira Sans', sans-serif;
+}
+.contineur{
+    width: 100%;
+    height: 100%;
+}
+.contineur .menu{
+    background-color: #000080;
+    width: 100%;
+    height: 80px;
+    padding: 30px 90px;
+}
+.contineur .menu .first ul{
+    list-style: none;
+    display: inline-flex;
+    margin-top: -8px;
+    cursor: pointer;
+}
+.contineur .menu .first ul li{
+    margin: 0 10px;
+}
+.contineur .menu .first ul i{
+    font-size: 40px;
+    color: var(--botton-color);
+}
+.contineur .menu .first ul p{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px;
+    color: var(--use-color);
+}
+.second ul{
+    list-style: none;
+    display: inline-flex;
+    position: absolute;
+    right: 97px;
+    top: 36px;
+}
+.second ul li{
+    color: var(--use-color);
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.second ul li .no{
+    width: 100px;
+    padding: 13px;
+    margin-top: -14px;
+    background-color: var(--botton-color);
+}
+.second ul li .fa-angle-down{
+    font-size: 10px;
+    margin-left: -14px;
+}
+.new{
+    background-image: url("../images/hello.jpg");
+    background-size: cover;
+    position: relative;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+}
+
+.new .do{
+    position: absolute;
+    left: 50%;
+    top: 47%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.new .do h1{
+    color: var(--use-color);
+    font-weight: 800;
+    font-size: 80px;
+    margin: 0px;
+}
+.new .do ul{
+    list-style: none;
+    display: inline-flex;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.new .do ul li{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px 10px;
+    text-transform: uppercase;
+}
+.new .do ul li .one,
+.new .do ul li .two{
+    width: 150px;
+    height: 40px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+.new .do ul li .one{
+    color: var(--use-color);
+    background-color: teal;
+}
+.new .do ul li .two{
+    background-color: var(--use-color);
+    color: black;
+}
+/* Resposive */
+@media (max-width: 767px){
+    .new .do h1{
+        font-size: 32px;
+    }
+    .new .do ul {
+        margin-left: -45px;
+}
+}
+@media (max-width: 991px){
+    .contineur .menu .first ul{
+      margin-left: -102px;
+    }
+    .second ul{
+        margin-right: -54px;
+    }
+    .second ul li{
+        margin: 0 10px;
+        font-size: 10px;
+    }
+    .new .do h1{
+        font-size: 49px;
+    }
+ }
+
+@media (max-width: 1200px){
+    .new .do h1{
+        font-size: 44px;
+    }
+}
+@media (max-width: 1400px){
+    .new .do h1{
+        font-size: 65px;
+    }
+}
+
+
+
+
+
+
